@@ -78,10 +78,10 @@
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
-    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
+    
     <script src="{{asset "built/infinitescroll.js"}}"></script>
     <script>
-
+        //PRISM SCRIPT
         // Detect if we have code tags on the page.
         var codeElement = document.querySelector("pre > code");
         if (typeof (codeElement) != 'undefined' && codeElement != null) {
@@ -113,6 +113,7 @@
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
+    
     <div id="search-overlay" class="search-overlay block">
         <div class="centered">
             <div id='search-box' class="search-box">
@@ -124,7 +125,7 @@
             <section class="search-results" id="results"></section>
         </div>
     </div>
-    <script type="text/javascript" src="{{asset "assets/js/ghosthunter.min.js"}}"></script>
+    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
 </body>
 
 </html>
