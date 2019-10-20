@@ -479,13 +479,16 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     position: relative;
 }
-
+.post-card-meta-date {
+    color: var(--red);
+}
 .post-card-excerpt {
     font-family: Georgia, serif;
     padding: 0px 20px;
+    vertical-align: top;
+    padding-bottom: 20px;
 }
 
 .post-card-meta {
