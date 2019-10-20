@@ -417,7 +417,9 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     object-fit: cover;
 }
 .post-card-header {
-    padding: 20px;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 .post-card-content-link {
     flex-grow: 1;
@@ -447,16 +449,21 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     color: #FFFF;
     border-radius: 20px;
 }
+.post-tag:hover {
+    background: color(var(--red) lightness(-9%) saturation(-10%));
+
+}
 
 .post-card-tags {
     display: block;
-    margin-bottom: 4px;
     color: var(--midgrey);
     font-size: 1.2rem;
     line-height: 1.15em;
     font-weight: 500;
     letter-spacing: 0.5px;
     text-transform: uppercase;
+    z-index: 1;
+    padding: 0px 20px 5px 20px;
 }
 .post-card-tag {
     background-color: var(--red);
@@ -469,6 +476,11 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     padding: 5px;
     color: #FFFF;
     border-radius: 20px;
+}
+
+.post-card-tag:hover {
+    background: color(var(--red) lightness(-9%) saturation(-10%));
+
 }
 
 .post-card-title {
@@ -486,9 +498,8 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 }
 .post-card-excerpt {
     font-family: Georgia, serif;
-    padding: 0px 20px;
+    padding: 5px 20px 20px 20px;
     vertical-align: top;
-    padding-bottom: 20px;
 }
 
 .post-card-meta {
