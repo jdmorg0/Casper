@@ -74,12 +74,11 @@
 
 
     {{!-- jQuery + Fitvids, which makes all video embeds responsive --}}
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
-    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
-
+    <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
     <script src="{{asset "built/infinitescroll.js"}}"></script>
     <script>
 
@@ -107,7 +106,7 @@
             document.head.appendChild(prismScript);
         }
     </script>
-    
+
 
     {{!-- The #block helper will pull in data from the #contentFor other template files. In this case, there's some JavaScript which we only want to use in post.hbs, but it needs to be included down here, after jQuery has already loaded. --}}
     {{{block "scripts"}}}
@@ -125,7 +124,7 @@
             <section class="search-results" id="results"></section>
         </div>
     </div>
+    <script type="text/javascript" src="{{asset "assets/js/ghosthunter.min.js"}}"></script>
 </body>
 
-<script type="text/javascript" src="{{asset "assets/js/search.js"}}"></script>
 </html>
