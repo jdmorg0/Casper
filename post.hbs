@@ -18,6 +18,7 @@ into the {body} of the default.hbs template --}}
         <article class="post-full {{post_class}} {{#unless feature_image}}no-image{{/unless}}">
 
             <header class="post-full-header">
+                <h1 class="post-full-title">{{title}}</h1>
                 <section class="post-full-meta">
                     <time class="post-full-meta-date"
                         datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
@@ -27,7 +28,6 @@ into the {body} of the default.hbs template --}}
                     {{/foreach}}
                     {{/if}}
                 </section>
-                <h1 class="post-full-title">{{title}}</h1>
             </header>
 
             {{#if feature_image}}

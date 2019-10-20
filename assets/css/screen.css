@@ -416,18 +416,36 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     background: var(--lightgrey) no-repeat center center;
     object-fit: cover;
 }
-
+.post-card-header {
+    padding: 20px;
+}
 .post-card-content-link {
     flex-grow: 1;
     position: absolute;
     width: 100%;
     height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: 25px 25px 0;
     color: var(--darkgrey);
 }
 
 .post-card-content-link:hover {
     text-decoration: none;
+}
+.post-tag {
+    margin: 5px;
+    background-color: var(--red);
+    font-size: 1.2rem;
+    line-height: 1.15em;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: var(--red);
+    padding: 5px;
+    color: #FFFF;
+    border-radius: 20px;
 }
 
 .post-card-tags {
@@ -440,6 +458,18 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     letter-spacing: 0.5px;
     text-transform: uppercase;
 }
+.post-card-tag {
+    background-color: var(--red);
+    line-height: 1.15em;
+    font-size: 1.2rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: var(--red);
+    padding: 5px;
+    color: #FFFF;
+    border-radius: 20px;
+}
 
 .post-card-title {
     margin-top: 0;
@@ -450,10 +480,12 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 }
 
 .post-card-excerpt {
     font-family: Georgia, serif;
+    padding: 0px 20px;
 }
 
 .post-card-meta {
@@ -698,6 +730,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-meta-date {
     color: var(--red);
+    padding: 20px;
 }
 
 .post-full-title {
