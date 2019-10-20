@@ -77,6 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
         </script>
+        <script type="text/javascript" src="{{asset "ghostHunter/dist/jquery.ghosthunter.js"}}"></script>
     <script type="text/javascript" src="{{asset "built/jquery.fitvids.js"}}"></script>
 
     <script src="{{asset "built/infinitescroll.js"}}"></script>
@@ -112,7 +113,17 @@
 
     {{!-- Ghost outputs important scripts and data with this tag - it should always be the very last thing before the closing body tag --}}
     {{ghost_foot}}
-
+    <div id="search-overlay" class="search-overlay block">
+        <div class="centered">
+            <div id='search-box' class="search-box">
+                <a href="#" id="close-btn" class="close-btn">{{> "icons/close"}}</a>
+                <form id="search-form" class="search-form" onsubmit="return false;">
+                    <input id="search-field" class="search-field" name="q" placeholder="Search" type="text"/>
+                </form>
+            </div>
+            <section class="search-results" id="results"></section>
+        </div>
+    </div>
 </body>
 
 </html>
