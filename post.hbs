@@ -20,13 +20,13 @@ into the {body} of the default.hbs template --}}
             <header class="post-full-header">
                 <h1 class="post-full-title">{{title}}</h1>
                 <section class="post-full-meta">
-                    <time class="post-full-meta-date"
-                        datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
                     {{#if tags}}
                     {{#foreach tags limit="3"}}
                     <a class="post-tag" href="{{url}}">{{name}}</a>
                     {{/foreach}}
                     {{/if}}
+                    <time class="post-full-meta-date"
+                        datetime="{{date format="YYYY-MM-DD"}}">{{date format="D MMMM YYYY"}}</time>
                 </section>
             </header>
 

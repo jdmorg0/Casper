@@ -735,6 +735,8 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-meta {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     color: var(--midgrey);
@@ -745,11 +747,11 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-meta-date {
     color: var(--red);
-    padding: 20px;
+    padding: 10px;
 }
 
 .post-full-title {
-    margin: 0;
+    margin: 10px;
     color: color(var(--darkgrey) l(-5%));
 }
 
@@ -1748,6 +1750,7 @@ Usage (In Ghost editor):
     white-space: nowrap;
 }
 
+
 .floating-header-share {
     display: flex;
     justify-content: flex-end;
@@ -1755,6 +1758,7 @@ Usage (In Ghost editor):
     padding-left: 2%;
     font-size: 1.3rem;
     line-height: 1;
+    height: 100px;
 }
 
 .floating-header-share a {

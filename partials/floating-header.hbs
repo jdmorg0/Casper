@@ -11,6 +11,15 @@
     <div class="floating-header-title">{{title}}</div>
     <div class="floating-header-share">
         <div class="floating-header-share-label">Share this {{> "icons/point"}}</div>
+                <div class="a2a_kit a2a_kit_size_32 a2a_default_style">
+            <a class="a2a_button_facebook"></a>
+            <a class="a2a_button_twitter"></a>
+            <a class="a2a_button_pinterest"></a>
+            <a class="a2a_dd" href="https://www.addtoany.com/share"></a>
+        </div>
+
+        <script async src="https://static.addtoany.com/menu/page.js"></script>
+        <!--
         <a class="floating-header-share-tw"
             href="https://twitter.com/share?text={{encode title}}&amp;url={{url absolute="true"}}"
             onclick="window.open(this.href, 'share-twitter', 'width=550,height=235');return false;">
@@ -20,10 +29,11 @@
             onclick="window.open(this.href, 'share-facebook','width=580,height=296');return false;">
             {{> "icons/facebook"}}
         </a>
-                <a class="floating-header-share-hackernews" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2F"
+        <a class="floating-header-share-hackernews" href="https://news.ycombinator.com/submitlink?u=http%3A%2F%2F"
             onclick="window.open(this.href, 'share-hackernews','width=580,height=296');return false;">
             {{> "icons/hackernews"}}
         </a>
+        -->
     </div>
     <progress id="reading-progress" class="progress" value="0">
         <div class="progress-container">

@@ -535,7 +535,7 @@ h6 {
     border: 1px solid #999;
     -webkit-border-radius: 2px;
     -moz-border-radius: 2px;
-    border-radius: 2px;
+    border-radius: 35px;
     background-color: #fff;
     overflow: hidden;
 }
@@ -574,3 +574,5 @@ section.search-results {
 p.search-description {
     color: var(--whitegrey);
 }
+
+
