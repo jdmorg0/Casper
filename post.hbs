@@ -42,6 +42,7 @@ into the {body} of the default.hbs template --}}
                             1400px" src="{{img_url feature_image size="xl"}}" alt="{{title}}" />
             </figure>
             {{/if}}
+            <div id='discourse-comments'></div>
 
             <section class="post-full-content">
                 <div class="post-content">
@@ -57,7 +58,18 @@ into the {body} of the default.hbs template --}}
                 {{subscribe_form placeholder="youremail@example.com"}}
             </section>
             {{/if}}
+            <script type="text/javascript">
+                DiscourseEmbed = {
+                    discourseUrl: 'https://forum.codecomposition.com/',
+                    discourseEmbedUrl: '{{url absolute="true"}}'
+                };
 
+                (function () {
+                    var d = document.createElement('script'); d.type = 'text/javascript'; d.async = true;
+                    d.src = DiscourseEmbed.discourseUrl + 'javascripts/embed.js';
+                    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(d);
+                })();
+            </script>
             <footer class="post-full-footer">
 
                 {{!-- There are two options for how we display the byline/author-info.
